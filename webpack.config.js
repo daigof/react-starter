@@ -1,13 +1,13 @@
-var debug = process.env.NODE_ENV !== "production";
+var debug = process.env.NODE_ENV !== 'production';
 var webpack = require( 'webpack' );
 
 module.exports = {
   context: __dirname,
-  devtool: debug ? "inline-sourcemap" : null,
-  entry: "./js/entry.js",
+  devtool: debug ? 'inline-sourcemap' : null,
+  entry: './js/entry.js',
   output: {
     path: __dirname,
-    filename: "app.js"
+    filename: 'app.js'
   },
   plugins: debug ? [] : [
     new webpack.optimize.DedupePlugin(),
@@ -15,7 +15,7 @@ module.exports = {
     new webpack.optimize.UglifyJsPlugin( {
       mangle: false,
       sourcemap: false
-    } ),
+    } )
   ],
   module: {
     loaders: [ {
