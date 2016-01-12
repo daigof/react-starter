@@ -1,5 +1,5 @@
 # react-starter
-This is a react Starter Kit Soultion. 
+This is a react Starter Kit Soultion.
 It contains:
 * webpack (see webpack conf file and just run webpack)
 * offline JSX transformation with babel
@@ -12,6 +12,4 @@ It contains:
 ##Setup
 1. Just run: `npm install`
 2. and then `webpack`
-3. Then run browser-sync `TO BE ADDED LOCALLY :)`
-
-
+3. Then run browser-sync `browser-sync start --server dist`
