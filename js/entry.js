@@ -1,6 +1,3 @@
- // require( './module1' );
- // require( './module2' );
-
  var React = require( 'react' );
  var ReactDOM = require( 'react-dom' );
 
