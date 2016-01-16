@@ -2,18 +2,20 @@ module.exports = {
   'extends': [
     'eslint:recommended'
   ],
+  'ecmaFeatures': {
+    'modules': true,
+    'destructuring': true,
+    'forOf': true,
+    'jsx': true
+  },
   'env': {
     'node': true,
-    'browser': true,
-    'es6': true,
-    'jquery': true
+    'es6': true
+    //'jquery': true
+    //'browser': true,
   },
   'globals': {
     // 'angular': true
-  },
-  'ecmaFeatures': {
-    'forOf': true,
-    'jsx': true
   },
   'rules': {
     'no-unused-vars': [ 0, {
